@@ -1,8 +1,11 @@
 {
   "ExpandedNodes": [
     "",
+    "\\models",
+    "\\models\\example",
     "\\snapshots",
     "\\tests"
   ],
+  "SelectedNode": "\\models\\example\\my_second_dbt_model.sql",
   "PreviewInSolutionExplorer": false
 }
