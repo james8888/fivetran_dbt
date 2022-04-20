@@ -11,14 +11,9 @@
 
 with source_data as (
 
-select 
-ID,
-_modified modified,
-f.value:name name,
-f.value:email email,
-_FIVETRAN_SYNCED FIVETRAN_SYNCED
-from "FIVETRAN_DATABASE"."AZURE_BLOB_STORAGE"."JSONFT",
-lateral flatten(input => users ) f
+    select 1 as id
+    union all
+    select null as id
 
 )
 
@@ -30,4 +25,3 @@ from source_data
 */
 
 -- where id is not null
-
